@@ -6,7 +6,7 @@ import Roadmap from './components/Roadmap';
 function App() {
   return (
     <div className='w-[100vw] min-h-screen'>
-      <div className='w-[100vw] h-[100vh] flex flex-col justify-center'>
+      <div className='w-[100vw] md:h-[100vh] h-[60vh] flex flex-col justify-center'>
         <Hero/>
       </div>
       <Invest/>
