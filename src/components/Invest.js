@@ -48,9 +48,9 @@ const house3y = {
 
 const Invest = () => {
   return (
-    <motion.div className='w-[100%] h-[800px] md:h-[50vh] bg-[#F7F7F7] relative flex flex-col md:flex-row'>
+    <motion.div className='w-[100%] h-[550px] md:h-[50vh] bg-[#F7F7F7] relative flex flex-col md:flex-row'>
         {/* Left */}
-        <motion.div className='md:w-1/2 w-full md:h-[50vh] h-[80%] overflow-hidden'>
+        <motion.div className='md:w-1/2 w-full md:h-[50vh] h-[60%] mt-5 md:mt-0 overflow-hidden'>
             <motion.div className='w-full h-full'>
                 <motion.div className='w-1/2 h-full mx-auto relative md:ml-52'>
                     <motion.img src={ellipse} width={200} className='absolute bottom-12'
