@@ -48,11 +48,11 @@ const house3y = {
 
 const Invest = () => {
   return (
-    <motion.div className='w-[100%] h-[50vh] bg-[#F7F7F7] relative flex'>
+    <motion.div className='w-[100%] h-[800px] md:h-[50vh] bg-[#F7F7F7] relative flex flex-col md:flex-row'>
         {/* Left */}
-        <motion.div className='w-1/2 h-[50vh] overflow-hidden'>
+        <motion.div className='md:w-1/2 w-full md:h-[50vh] h-[80%] overflow-hidden'>
             <motion.div className='w-full h-full'>
-                <motion.div className='w-1/2 h-full mx-auto relative ml-52'>
+                <motion.div className='w-1/2 h-full mx-auto relative md:ml-52'>
                     <motion.img src={ellipse} width={200} className='absolute bottom-12'
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -234,8 +234,8 @@ const Invest = () => {
 
 
         {/* Right */}
-        <motion.div className='w-1/2 h-full px-5 flex flex-col justify-center items-start overflow-hidden'>
-            <motion.div className='w-full text-5xl font-bold'
+        <motion.div className='md:w-1/2 w-full md:text-start text-center md:h-full h-[30%] md:px-5 flex flex-col mt-5 md:mt-0 md:justify-center items-start overflow-hidden'>
+            <motion.div className='w-full md:text-5xl text-3xl font-bold'
                 initial="hidden"
                 animate="visible"
                 variants={rightBox}
@@ -246,7 +246,7 @@ const Invest = () => {
             >
                 Invest, Earn, Travel, <br/> <span className='text-[#FF385C]'>Repeat.</span>
             </motion.div>
-            <motion.div className='text-[#6A6A6A] mt-5'
+            <motion.div className='text-[#6A6A6A] mt-5 mx-auto md:mx-0'
                 initial="hidden"
                 animate="visible"
                 variants={rightBox}
