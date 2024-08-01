@@ -1,6 +1,7 @@
 import './App.css';
 import Hero from './components/Hero';
 import Invest from './components/Invest';
+import Roadmap from './components/Roadmap';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Hero/>
       </div>
       <Invest/>
+      <Roadmap/>
     </div>
   );
 }

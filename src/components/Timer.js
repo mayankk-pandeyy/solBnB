@@ -3,7 +3,6 @@ import { useTimer } from 'react-timer-hook';
 
 function MyTimer({ expiryTimestamp }) {
   const {
-    totalSeconds,
     seconds,
     minutes,
     hours,
@@ -41,7 +40,7 @@ function MyTimer({ expiryTimestamp }) {
 
 const Timer = () => {
     const time = new Date();
-    time.setSeconds(time.getSeconds() + 6000);
+    time.setSeconds(time.getSeconds() + 60000);
     return (
         <div>
             <MyTimer expiryTimestamp={time} />
